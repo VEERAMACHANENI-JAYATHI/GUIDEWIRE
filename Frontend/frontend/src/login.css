@@ -1,0 +1,67 @@
+Login page wrapper
+.login-wrapper {
+  width: 100%;
+  max-width: 400px;
+  margin: 100px auto 0 auto; /* leave space for navbar */
+  padding: 40px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+  text-align: center;
+}
+
+/* Headings */
+.login-wrapper h2 {
+  color: #1e3a8a;
+  margin-bottom: 30px;
+  font-size: 1.8rem;
+}
+
+/* Inputs */
+.login-wrapper input {
+  width: 90%;
+  padding: 12px 15px;
+  margin: 10px 0;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  transition: border 0.2s;
+}
+
+.login-wrapper input:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 5px rgba(59, 130, 246, 0.5);
+}
+
+/* Button */
+.login-wrapper button {
+  width: 95%;
+  padding: 12px 0;
+  margin-top: 20px;
+  background-color: #3b82f6;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.login-wrapper button:hover {
+  background-color: #2563eb;
+  transform: translateY(-2px);
+}
+
+/* Responsive */
+@media screen and (max-width: 480px) {
+  .login-wrapper {
+    margin: 80px 20px 0 20px;
+    padding: 30px;
+  }
+
+  .login-wrapper input, .login-wrapper button {
+    width: 100%;
+  }
+}

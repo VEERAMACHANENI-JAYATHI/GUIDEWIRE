@@ -1,0 +1,180 @@
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f6f8;
+  color: #333;
+  overflow-x: hidden;
+}
+
+/* Fixed navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background-color: #1e40af;
+  color: white;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  height: 70px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+.hed{
+  color: white;
+}
+
+.navbar h2 {
+  font-size: 1.8rem;
+}
+
+.navbar button {
+  background-color: #3b82f6;
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  margin-left: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.2s;
+}
+
+.navbar button:hover {
+  background-color: #2563eb;
+  transform: translateY(-2px);
+}
+
+/* Page wrapper */
+.page-wrapper {
+  width: 100%;
+  min-height: 100vh;
+  padding-top: 80px; /* Space below fixed navbar */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-x: hidden;
+}
+
+/* Dashboard and Payments container */
+.dashboard, .payments-container {
+  width: 100%;
+  max-width: 1200px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 30px;
+  margin-bottom: 40px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+}
+
+/* Dashboard headings */
+.dashboard h1 {
+  color: #1e3a8a;
+  margin-bottom: 20px;
+}
+
+.dashboard h2 {
+  color: #1e40af;
+  margin-bottom: 8px;
+}
+
+.dashboard h3 {
+  margin: 4px 0;
+}
+
+/* Wallet */
+.wallet {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin: 20px 0;
+  color: #065f46;
+}
+
+/* Weather card */
+.weather-card {
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 12px;
+  background-color: #f0f9ff;
+  border: 1px solid #93c5fd;
+  display: inline-block;
+  text-align: left;
+}
+
+.weather-card h3 {
+  margin: 5px 0;
+  font-weight: 600;
+}
+
+/* Centered text for home/login/signup */
+.center-text {
+  text-align: center;
+  margin-top: 50px;
+  width: 90%;
+  max-width: 800px;
+}
+
+/* Payments cards */
+.payment-card {
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.06);
+  background-color: #ffffff;
+  transition: transform 0.2s, box-shadow 0.2s;
+  width: 100%;
+}
+
+.payment-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.payment-card h3 {
+  font-size: 1.2rem;
+  color: #1e40af;
+  margin-bottom: 10px;
+}
+
+.payment-card p {
+  margin: 5px 0;
+  font-size: 1rem;
+  color: #555;
+}
+
+.no-payments {
+  font-style: italic;
+  color: #777;
+  margin-top: 20px;
+}
+
+/* Buttons */
+button {
+  cursor: pointer;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .dashboard, .payments-container {
+    padding: 20px;
+  }
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+  }
+  .navbar button {
+    margin: 5px 5px 0 0;
+  }
+}
